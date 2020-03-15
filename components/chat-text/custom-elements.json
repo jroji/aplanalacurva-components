@@ -2,12 +2,7 @@
   "version": "experimental",
   "tags": [
     {
-      "name": "alc-button-primary",
-      "path": "./components/button-primary/alc-button-primary.js"
-    },
-    {
       "name": "alc-chat-text",
-      "path": "./components/chat-text/alc-chat-text.js",
       "attributes": [
         {
           "name": "avatar",
