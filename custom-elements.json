@@ -6,51 +6,117 @@
       "path": "./components/button-primary/alc-button-primary.js"
     },
     {
-      "name": "alc-nav",
-      "path": "./components/nav/alc-nav.js",
+      "name": "alc-chat-form",
+      "path": "./components/chat-form/alc-chat-form.js",
       "attributes": [
         {
-          "name": "links",
-          "type": "array"
+          "name": "icon",
+          "type": "string"
         },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "accessibleDescription",
+          "type": "string",
+          "default": "\"Enviar mensaje\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "accessibleDescription",
+          "attribute": "accessibleDescription",
+          "type": "string",
+          "default": "\"Enviar mensaje\""
+        }
+      ],
+      "events": [
+        {
+          "name": "alc-chat-form-send",
+          "description": "Fired when send button is clicked"
+        }
+      ]
+    },
+    {
+      "name": "alc-chatbot",
+      "path": "./components/chatbot/alc-chatbot.js",
+      "attributes": [
         {
           "name": "logo",
           "type": "string"
         },
         {
-          "name": "logo-mobile",
+          "name": "close-image",
           "type": "string"
         },
         {
-          "name": "button-label",
-          "type": "string"
+          "name": "isOpen",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "api",
+          "type": "string",
+          "default": "\"https://dev-aplanalacurva.herokuapp.com/resolve\""
+        },
+        {
+          "name": "error-message",
+          "type": "string",
+          "default": "\"Lo sentimos, en estos momentos no podemos atenderle. Inténtelo más tarde.\""
+        },
+        {
+          "name": "messages",
+          "type": "array",
+          "default": "[]"
         }
       ],
       "properties": [
-        {
-          "name": "links",
-          "attribute": "links",
-          "type": "array"
-        },
         {
           "name": "logo",
           "attribute": "logo",
           "type": "string"
         },
         {
-          "name": "logoMobile",
-          "attribute": "logo-mobile",
+          "name": "closeImg",
+          "attribute": "close-image",
           "type": "string"
         },
         {
-          "name": "buttonLabel",
-          "attribute": "button-label",
-          "type": "string"
-        }
-      ],
-      "events": [
+          "name": "isOpen",
+          "attribute": "isOpen",
+          "type": "boolean",
+          "default": "false"
+        },
         {
-          "name": "open-diagnostic"
+          "name": "api",
+          "attribute": "api",
+          "type": "string",
+          "default": "\"https://dev-aplanalacurva.herokuapp.com/resolve\""
+        },
+        {
+          "name": "errorMessage",
+          "attribute": "error-message",
+          "type": "string",
+          "default": "\"Lo sentimos, en estos momentos no podemos atenderle. Inténtelo más tarde.\""
+        },
+        {
+          "name": "messages",
+          "attribute": "messages",
+          "type": "array",
+          "default": "[]"
         }
       ]
     }

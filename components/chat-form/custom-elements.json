@@ -1,0 +1,50 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "alc-chat-form",
+      "path": "./alc-chat-form.js",
+      "attributes": [
+        {
+          "name": "icon",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "accessibleDescription",
+          "type": "string",
+          "default": "\"Enviar mensaje\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "accessibleDescription",
+          "attribute": "accessibleDescription",
+          "type": "string",
+          "default": "\"Enviar mensaje\""
+        }
+      ],
+      "events": [
+        {
+          "name": "alc-chat-form-send",
+          "description": "Fired when send button is clicked"
+        }
+      ]
+    }
+  ]
+}
